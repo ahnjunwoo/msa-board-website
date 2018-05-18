@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head th:replace="fragments/config :: configFragment"></head>
+    <body class="hold-transition skin-blue sidebar-mini">
+        <div class="wrapper">
+            <header th:replace="fragments/header :: headerFragment"></header>
+            <aside th:replace="fragments/side :: sideFragment"></aside>
+            <div layout:fragment="content"></div>
+            <footer th:replace="fragments/footer:: footerFragment"></footer>
+            <aside th:replace="fragments/side2 :: side2Fragment"></aside>
+            <div class="control-sidebar-bg"></div>
+        </div>
+    </body>
+</html>
